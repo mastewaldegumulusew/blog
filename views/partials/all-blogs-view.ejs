@@ -1,0 +1,8 @@
+<ul class="view-blogs">
+    <% blogs.forEach((blog, index) => { %>
+        <li style="--animation-order: <%= index + 1 %>;" onclick="location.href='/blog/view/<%= blog._id %>'">
+            <h3><%= blog.title %></h3>
+            <p><%= blog.body.substr(0, 200) %></p>
+        </li>
+    <% }); %>
+</ul>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/html-head") %>
+</head>
+<body>
+    <section class="header">
+        <%- include('./partials/header', { addButtonToShow: true }) %>
+    </section>
+    <section class="body">
+        <div class="content">
+            <%- include("./partials/blog-view", { blog }) %>
+        </div>
+    </section>
+    <section class="footer">
+        <%- include("./partials/footer") %>
+    </section>
+</body>
+</html>
